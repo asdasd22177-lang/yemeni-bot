@@ -3,7 +3,8 @@
 title = Essa Walkie
 package.name = essawalkie
 package.domain = org.essa
-
+source.dir = .
+version = 1.0
 
 source.include_exts = py,png,jpg,kv,atlas,txt
 
