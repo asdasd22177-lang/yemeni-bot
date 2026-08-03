@@ -15,6 +15,9 @@ orientation = portrait
 
 android.permissions = INTERNET,ACCESS_NETWORK_STATE
 
+# مواصفات المعمارية المقبولة للحزمة
+android.archs = arm64-v8a
+
 # مواصفات إصدار أندرويد لضمان التوافق
 android.api = 33
 android.minapi = 21
