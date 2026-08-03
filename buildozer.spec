@@ -14,6 +14,9 @@ orientation = portrait
 
 android.permissions = INTERNET,ACCESS_NETWORK_STATE
 
+# الموافقة التلقائية على رخصة أندرويد لتجنب توقف البناء
+android.accept_sdk_license = True
+
 [buildozer]
 log_level = 2
 warn_on_root = 1
