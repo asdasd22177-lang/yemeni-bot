@@ -16,7 +16,16 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: Install dependencies
+    - name: Install System Dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential ccache git python3-pip \
+          libffi-dev libssl-dev autoconf automake libtool pkg-config \
+          zlib1g-dev libncurses5-dev libncursesw5-dev libreadline-dev \
+          libsqlite3-dev libgdbm-dev libdb5.3-dev libbz2-dev libexpat1-dev \
+          liblzma-dev tk-dev gettext m4 zip unzip openjdk-17-jdk
+
+    - name: Install Python Dependencies
       run: |
         python -m pip install --upgrade pip
         pip install --upgrade buildozer cython
@@ -29,4 +38,3 @@ jobs:
       with:
         name: package
         path: bin/*.apk
-        
