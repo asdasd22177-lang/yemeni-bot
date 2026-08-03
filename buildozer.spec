@@ -8,13 +8,19 @@ version = 1.0
 
 source.include_exts = py,png,jpg,kv,atlas,txt
 
-requirements = python3,hostpython3
+# إضافة kivy ومكتبات أندرويد الضرورية
+requirements = python3,kivy
 
 orientation = portrait
 
 android.permissions = INTERNET,ACCESS_NETWORK_STATE
 
-# الموافقة التلقائية على رخصة أندرويد لتجنب توقف البناء
+# مواصفات إصدار أندرويد لضمان التوافق
+android.api = 33
+android.minapi = 21
+android.ndk = 25b
+
+# قبول الترخيص تلقائياً
 android.accept_sdk_license = True
 
 [buildozer]
